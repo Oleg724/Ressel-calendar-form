@@ -9,7 +9,9 @@
 body {
   display: flex;
   flex-direction: column;
-  color: #0C1742;
+  color: #697697;
+  display: flex;
+  background-color: #f5f6fb;
 }
 
 @import "_layout";
@@ -24,7 +26,7 @@ body {
 
 @font-face {
   font-family: "PoppinsMedium";
-  src: url("./dist/fonts/Poppins-Medium.ttf") format("truetype");
+  src: url("./fonts/Poppins-Medium.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }

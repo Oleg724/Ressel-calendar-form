@@ -5,7 +5,6 @@ const cssnano = require('gulp-cssnano');
 const imagemin = require('gulp-imagemin');
 const autoprefixer = require('gulp-autoprefixer');
 const rename = require('gulp-rename');
-// const pump = require('pump');
 
 function scssToCss (cb) {
     gulp.src('./src/scss/**/*.scss')

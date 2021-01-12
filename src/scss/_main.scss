@@ -2,6 +2,29 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "PoppinsRegular", sans-serif;
+  text-decoration: none;
 }
 
-@import "blocks/blocks";
+body {
+  display: flex;
+  flex-direction: column;
+  color: #0C1742;
+}
+
+@import "_layout";
+@import "blocks/_blocks";
+
+@font-face {
+  font-family: "PoppinsRegular";
+  src: url("./fonts/Poppins-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "PoppinsMedium";
+  src: url("./dist/fonts/Poppins-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}

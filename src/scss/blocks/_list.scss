@@ -1,0 +1,19 @@
+.list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 388px;
+  width: 100%;
+
+  &__item {
+    & a {
+      color: #ffffff;
+
+      &:hover {
+        color: #697697;
+        transition: color .3s ease;
+      }
+    }
+  }
+}

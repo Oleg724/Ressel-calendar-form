@@ -34,7 +34,15 @@
     &--flex {
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
       margin-top: -10px;
+
+      & .form__text {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        padding-right: 7px;
+      }
     }
 
     &::placeholder {
@@ -62,11 +70,15 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      min-width: 128px;
       width: 128px;
       height: 40px;
       border: 1px solid #9fa7bd;
       border-radius: 6px;
-      margin-left: auto;
+      //margin-left: auto;
+      overflow: hidden;
+      //text-overflow: ellipsis;
+      //text-align: start;
 
       &:hover {
         cursor: pointer;
@@ -75,10 +87,16 @@
       }
 
       & input {
-        width: 100%;
+        width: .1px;
+        height: .1px;
         opacity: 0;
-        visibility: hidden;
         position: absolute;
+        overflow: hidden;
+        z-index: -1;
+      }
+
+      & span {
+        display: inline-block;
       }
     }
   }

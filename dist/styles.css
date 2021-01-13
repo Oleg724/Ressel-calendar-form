@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +13,7 @@ body {
   -webkit-box-direction: normal;
   flex-direction: column;
   color: #697697;
+  display: flex;
   background-color: #f5f6fb;
 }
 
@@ -68,20 +68,16 @@ body {
   align-self: center;
 }
 
-/* скрываем чекбокс */
 .menu__toggle {
   opacity: 0;
   position: absolute;
 }
 
-/* стилизуем кнопку */
 .menu__btn {
   display: -webkit-box;
   display: flex;
-  /* используем flex для центрирования содержимого */
   -webkit-box-align: center;
   align-items: center;
-  /* центрируем содержимое кнопки */
   position: absolute;
   top: 50%;
   left: 0;
@@ -94,7 +90,6 @@ body {
   z-index: 1;
 }
 
-/* добавляем "гамбургер" */
 .menu__btn > span,
 .menu__btn > span::before,
 .menu__btn > span::after {
@@ -328,7 +323,16 @@ body {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   flex-direction: row;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
   margin-top: -10px;
+}
+
+.form__select--flex .form__text, .form__input--flex .form__text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-right: 7px;
 }
 
 .form__select::-webkit-input-placeholder, .form__input::-webkit-input-placeholder {
@@ -363,11 +367,12 @@ body {
   justify-content: center;
   -webkit-box-align: center;
   align-items: center;
+  min-width: 128px;
   width: 128px;
   height: 40px;
   border: 1px solid #9fa7bd;
   border-radius: 6px;
-  margin-left: auto;
+  overflow: hidden;
 }
 
 .form__label--relative:hover {
@@ -378,10 +383,16 @@ body {
 }
 
 .form__label--relative input {
-  width: 100%;
+  width: .1px;
+  height: .1px;
   opacity: 0;
-  visibility: hidden;
   position: absolute;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.form__label--relative span {
+  display: inline-block;
 }
 
 .form__label, .form__text {

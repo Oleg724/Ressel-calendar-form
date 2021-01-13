@@ -6,15 +6,18 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles.css">
-    <title>Form</title>
+    <title>Ressel Calculator Form</title>
 </head>
 <body>
     <header class="header">
-        <div class="header__inner">
+        <div class="header__inner menu">
+            <input class="menu__toggle" id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
             <div class="header__item">
                 <img class="header__img" src="./images/rc.png" alt="rc logo"/>
             </div>
-
             <ul class="header__item list">
                 <li class="list__item">
                     <a href="#">Home</a>
@@ -22,22 +25,95 @@
                 <li class="list__item">
                     <a href="#">Payouts</a>
                 </li>
-                <li class="list__item">
-                    <button class="list__btn btn">Submit Tip</button>
-                </li>
             </ul>
+            <div class="header__item">
+                <button class="list__btn btn">Submit Tip</button>
+            </div>
         </div>
     </header>
     <main>
         <section class="section">
-            <div class="section__inner">
-
+            <div class="block-title">
+                <div class="block-title__inner">
+                    <img src="./images/confirm.png" alt="confirm" class="block-title__img"/>
+                    <h1 class="block-title__title">Create Tip</h1>
+                </div>
+                <p class="block-title__description">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation
+                </p>
             </div>
+            <form class="form">
+                <div class="form__block">
+                    <label for="email" class="form__label">Email</label>
+                    <input type="email" class="form__input" id="email" placeholder="Enter e-mail" required>
+                </div>
+                <div class="form__block">
+                    <label for="discord_id" class="form__label">Discord ID</label>
+                    <input type="text" class="form__input" id="discord_id" placeholder="Name / ID" required>
+                </div>
+                <div class="form__block">
+                    <label for="subject" class="form__label">Subject</label>
+                    <input type="text" class="form__input" id="subject" placeholder="Enter subject" required>
+                </div>
+                <div class="form__block">
+                    <div class="form__inner">
+                        <label for="description" class="form__label">Description</label>
+                        <p class="form__text">
+                            Please describe the information you wish to
+                            exchange for bounty in the field below.
+                        </p>
+                    </div>
+                    <textarea class="form__textarea" name="description" id="description" cols="30" rows="20"
+                        placeholder="Enter description" required></textarea>
+                </div>
+                <div class="form__block">
+                    <label for="price" class="form__label">Asking Price ($)</label>
+                    <input type="number" class="form__input" id="price" placeholder="Enter price" required>
+                </div>
+                <div class="form__block">
+                    <label for="payment" class="form__label">Payment Method</label>
+                    <select class="form__select" id="payment" required>
+                        <option value="Etherum">Etherum</option>
+                        <option value="Paypal">Paypal</option>
+                        <option value="Amazon Pay">Amazon Pay</option>
+                        <option value="Google Pay">Google Pay</option>
+                        <option value="American Express">American Express</option>
+                        <option value="Apple Pay">Apple Pay</option>
+                        <option value="Stripe">Stripe</option>
+                        <option value="Square">Square</option>
+                        <option value="Masterpass" id="masterpass">Masterpass</option>
+                    </select>
+                </div>
+                <div class="form__block">
+                    <label for="address" class="form__label">Wallet Address</label>
+                    <input type="text" class="form__input" id="address" placeholder="Wallet Address" required>
+                </div>
+                <div class="form__block">
+                    <p class="form__label">Upload Feature</p>
+                    <div class="form__input form__input--flex">
+                        <p class="form__text">Choose file</p>
+                        <label for="upload" class="form__label form__label--relative">
+                            <span class="form__upload">Browse</span>
+                            <input type="file" class="form__input" id="upload" placeholder="" required/>
+                        </label>
+                    </div>
+                </div>
+                <div class="btn-wrapper">
+                    <input type="submit" class="btn"/>
+                </div>
+            </form>
         </section>
-
     </main>
-    <footer>
-
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__item">
+                <img class="header__img" src="./images/rc.png" alt="rc logo"/>
+            </div>
+            <div class="footer__item">
+                <p class="footer__text">Operated by @ResellCalendar on Twitter</p>
+            </div>
+        </div>
     </footer>
     <script src="./index.js"></script>
 </body>

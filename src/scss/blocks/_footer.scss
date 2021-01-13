@@ -1,0 +1,30 @@
+.footer {
+  width: 100%;
+  background-color: #ebecf1;
+  padding: 60px 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__text {
+    color: #28335e;
+    font-family: Poppins-Regular, sans-serif;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .footer {
+
+    &__inner {
+      max-width: initial;
+      width: 80%;
+    }
+  }
+}

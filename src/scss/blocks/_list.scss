@@ -1,12 +1,18 @@
 .list {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   max-width: 388px;
   width: 100%;
 
   &__item {
+    padding: 0 40px;
+
+    &:last-child {
+      padding: 0 80px 0 40px;
+    }
+
     & a {
       color: #697697;
 

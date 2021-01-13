@@ -7,4 +7,11 @@
   color: #ffffff;
   font-size:16px;
   box-shadow: 14px 11px 18px 6px rgba(181, 208, 244, 0.75);
+  outline: none;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #0d70d1;
+    transition: background-color .3s ease;
+  }
 }

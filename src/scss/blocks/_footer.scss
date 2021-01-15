@@ -16,6 +16,15 @@
     color: #28335e;
     font-family: Poppins-Regular, sans-serif;
     font-size: 16px;
+    padding-left: 30px;
+    text-align: center;
+  }
+
+  &__logo {
+    font-size: 40px;
+    font-family: 'PoppinsSemiBoldItalic', sans-serif;
+    color: #017ffa;
+    text-transform: uppercase;
   }
 }
 
@@ -25,6 +34,15 @@
     &__inner {
       max-width: initial;
       width: 80%;
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .footer {
+
+    &__logo {
+      font-size: 31px;
     }
   }
 }

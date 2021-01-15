@@ -32,8 +32,43 @@ body {
 }
 
 @font-face {
-  font-family: "PoppinsMedium";
+  font-family: "PoppinsBold";
   src: url("./fonts/Poppins-Bold.ttf") format("truetype");
   font-style: normal;
-  font-weight: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "PoppinsSemibold";
+  src: url("./fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "PoppinsBoldItalic";
+  src: url("./fonts/Poppins-BoldItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "PoppinsExtraBoldItalic";
+  src: url("./fonts/Poppins-ExtraBoldItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "PoppinsExtraBold";
+  src: url("./fonts/Poppins-ExtraBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "PoppinsSemiBoldItalic";
+  src: url("./fonts/Poppins-SemiBoldItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
 }

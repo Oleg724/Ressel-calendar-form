@@ -75,10 +75,7 @@
       height: 40px;
       border: 1px solid #9fa7bd;
       border-radius: 6px;
-      //margin-left: auto;
       overflow: hidden;
-      //text-overflow: ellipsis;
-      //text-align: start;
 
       &:hover {
         cursor: pointer;
@@ -111,7 +108,7 @@
     background-color: #f5f6fb;
     border-radius: 16px;
     border: 1px solid #9fa7bd;
-    margin-top: 40px;
+    margin-top: 12px;
     outline: none;
     padding: 20px;
     font-size: 20px;
@@ -137,9 +134,14 @@
 
 @media screen and (max-width: 720px) {
   .form {
+    padding-top: 0;
 
     &__block {
       width: 100%;
+    }
+
+    &__inner {
+      width: initial;
     }
   }
 }
